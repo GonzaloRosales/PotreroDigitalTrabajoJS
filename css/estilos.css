@@ -1,0 +1,556 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700;900&display=swap');
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+body { margin: 0;
+  background-image: url(../imagenes/fondo.png);
+ }
+
+
+ /**NAV**/
+
+ nav{
+
+  display: flex;
+  justify-content: space-between;
+  background-color: #C22626;
+  font-family: 'Poppins', sans-serif;
+  align-items: center;
+  width: 100vw;
+  padding: 0.6rem; 
+}
+
+
+/**LOGO**/
+
+.logo h2 {
+  color: #F9FCF8;
+  font-weight: bold;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 4vh;
+
+}
+
+/**Menu**/
+
+.menu{
+  display: flex;
+  justify-content: space-evenly; 
+  
+}
+.menu a {
+  text-decoration: none;
+  color: #F9FCF8;
+}
+
+.menu a {
+  font-weight: 300;
+  margin: 1rem;
+}
+
+
+.menu a:hover{
+  color: rgb(246, 246, 173);
+  text-decoration: underline;
+  transition: 0.3s;
+ 
+}
+
+/**header**/ 
+.titulo{
+  background-color: salmon;
+  color: #F9FCF8;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  padding: .1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+ }
+/**boton oscuro**/
+ .oscuro{display: flex;
+  justify-content: flex-end;
+  
+  
+ }
+ 
+  .modoOscuro{
+    background-color: #C22626;
+    color: #F9FCF8;
+    border:none;
+    font-size: 3rem;
+    border-radius: 0.2rem;
+    
+  }
+ 
+ 
+/**ICONOS Y ENLACES DE RECETAS**/
+ .recetas{
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+}
+
+.recetas a:hover{
+  transform: scale(1.1);
+}
+
+.recetagratis , .cocineros{
+  height:100px;
+}
+
+.kiwilimon , .paulina{
+  height:80px;
+}
+
+/**BOTON WSP**/
+
+.boton-flotante img {
+  height: 100px;
+  position: fixed;
+  right: -13px;
+  z-index: 10;
+  bottom:20px;
+}
+
+/**CONTENIDO*/
+
+.primerMain{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem 5rem;
+}
+
+ .historia{
+  background-color: rgba(253, 250, 250, 0.6);
+  border-radius: 1rem;
+  width: 40%;
+
+ }
+
+ .historia p{
+  margin:0rem 2rem 2rem;
+  font-weight: 500;
+  
+ }
+
+ .historia h1{
+  margin: 1.5rem;
+  font-weight:700;
+  text-align: center;
+  
+ }
+
+ /**IMAGEN CAPONATA**/
+
+ .caponata-imagen { margin: auto;
+  width: 500px;
+  margin: 2rem;
+  border-radius: 1rem;
+}
+
+.imagen{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(253, 250, 250, 0.6);
+  width: 40%;
+  border-radius: 1rem;
+  margin:2rem;
+}
+
+/**INFO Y PREPARACION**/
+
+.segundoMain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 5rem;
+
+}
+ .info {
+  background-color: rgba(253, 250, 250, 0.6);
+  border-radius: 1rem;
+  width: 40%;
+  height: 27vh;
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+ }
+ .ingredientes{
+  background-color: rgba(253, 250, 250, 0.6);
+  border-radius: 1rem;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+ }
+
+ .info h3 , .ingredientes h3 , .prepa h3{
+  font-weight:700;
+  margin: 1.5rem;
+ }
+
+
+ ul li::marker {
+  color:#C22626;
+}
+
+.tercerMain{
+  display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem 5rem;
+}
+
+.prepa{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(253, 250, 250, 0.6);
+  width: 50%;
+  border-radius: 1rem;
+  margin:2rem;
+}
+
+/**VIDEO Y MAPA**/
+
+.vima{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/**CARDS**/
+.boton{
+  background-color: #5E110B;
+  margin-bottom: 1rem;
+}
+
+.car-body{
+  background-color: #F9FCF8;
+  
+}
+
+/**FOOTER**/
+
+footer{ background-color:#C22626;
+
+  margin: 0 auto;
+  padding: 3rem;
+  display: flex;
+ align-items: center;
+  flex-direction: column;
+  
+  }
+
+  .autor{
+    align-self: flex-start;
+  }
+  .autoria{
+    background-color: #5E110B;
+    border: none;
+
+  }
+  
+  .potrero {
+    width:80px;
+  
+  }
+  
+  .face , .insta , .youtube{
+  width: 30px;
+  }
+
+  .face:hover{
+     transform: scale(1.1);
+     transition: 0.35s;
+  }
+  .insta:hover{
+    transform: scale(1.1);
+    transition: 0.35s;
+ }
+ .youtube:hover{
+  transform: scale(1.1);
+  transition: 0.35s;
+}
+
+.final
+{
+  display: flex;
+  align-items: center;
+}
+
+  /**FORMULARIO DE PAGINA DE CONTACTO**/
+
+  .formulario{
+    background-color: #C22626;
+    padding: 25px;
+    border: 2px solid #5E110B;
+    border-radius: 10px;
+    color:white;
+    margin:15px;
+    width: 30vw;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  }
+  
+  .formulario:hover{
+    box-shadow: 0 0.1rem 0.4rem rgba(0,0,0.3);
+    transition: 0.35s;
+  
+  }
+  
+   .controls{
+  
+     border: 1px solid black;
+     margin: 7px;
+   }
+  
+  .controls:hover{
+    background: black;
+    color:white;
+    transform: scale(1.03);
+    transition: 0.20s;
+  }
+  
+  .formulario h4{
+    text-align:center;
+    font-size: 19px;
+    border-bottom: 1px solid white;
+  }
+  
+  
+   .buttom{
+     width: 50%;
+     height: 40px;
+     margin:6px;
+     background-color: black;
+     color:white;
+     border:1px solid white;
+     border-radius: 10px;
+     align-self: center;
+   }
+  
+   .buttom:hover{
+     color:yellow;
+     transform: scale(1.1);
+     transition: 0.35s;
+     cursor: pointer;
+  
+   }
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+/**MEDIAS**/
+
+/**260PX**/
+
+@media(max-width:1260px){
+.primerMain{
+  flex-direction: column;
+  width: 100%;
+}
+
+
+.historia{
+  width: 90vw;
+}
+
+.imagen{
+  width: 90vw;
+}
+.boton-flotante img {
+
+  right: -13px;
+  bottom: 0px;
+}
+
+.prepa{
+  width: 90vw;
+}
+}
+
+/**700PX**/
+
+ @media(max-width:700px){
+  nav{flex-direction: column;
+    justify-content: center;
+    padding:0;
+  }
+  .caponata-imagen{
+    width: 70vw;
+  }
+  .logo img{
+    height: 2rem;
+  }
+
+  .logo{
+    margin-top: 0.8rem;
+    
+    
+  }
+  .menu{
+    flex-direction:row;
+    align-items: flex-start;
+    font-size: 0.8rem;
+  }
+
+  .recetas{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin:0.5rem
+
+  }
+  .recetas a{
+    margin: 0.5rem;
+    
+  }
+  .recetagratis , .cocineros{
+    height:70px;
+  }
+  
+  .kiwilimon , .paulina{
+    height:60px;}
+
+    .boton-flotante img {
+      height: 60px;
+      right: -13px;
+      bottom: 0px;
+    }
+
+.imagen{
+  width: 90vw;
+}
+
+.formulario{
+  width: 80vw;
+  height: 50vh;
+}
+ }
+
+/**540PX*/
+
+ @media(max-width:540px){
+  .segundoMain{
+    flex-direction: column;
+  }
+  .info , .ingredientes{
+    width: 87vw;
+  }
+
+  .primerMain{
+    margin-top: -3rem;
+  }
+  .video , .mapa{
+    width: 70vw;
+    height: 15vh;
+  }
+  .video{
+    margin-bottom: 1rem;
+  }
+  .autor{
+    align-self: center;
+  }
+ }
+
+/**450px**/
+
+ @media(max-width:450px){
+  .recetagratis , .cocineros{
+    height:50px;
+  }
+  
+  .kiwilimon , .paulina{
+    height:30px;}
+ }
+
+ .modoOscuro{
+  font-size:0.8rem;
+ }
+ .potrero {
+  width:60px;
+
+}
+
+ /**Moviles pequeños**/
+
+ @media(max-width:350px){
+  .menu{
+    font-size: 0.5rem;
+  }
+  .recetagratis , .cocineros{
+    height:30px;
+  }
+  
+  .kiwilimon , .paulina{
+    height:20px;}
+
+    .logo h2 {
+      color: #F9FCF8;
+      font-weight: bold;
+      font-size: 1rem;
+    }
+    .logo img{
+      height: 5vh; 
+    }
+  
+ }
+
+ @media(max-width:255px){
+  .menu{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .logo img{
+    height: 2vh;
+  }
+  .info{
+    height: 40vh;
+  }
+
+  .final{
+    flex-wrap: wrap;
+  }
+ }
